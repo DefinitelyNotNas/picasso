@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+}
+
+.background{
+    background-color: blue;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.stars{
+    color: yellow;
+}
+
+.mountains{
+    color: lightblue;
+}
+
+.moon{
+    color: yellow;
+}   
+
+.bottom {
+    color: darkblue;
+}
