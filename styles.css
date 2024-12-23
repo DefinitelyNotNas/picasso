@@ -1,26 +1,104 @@
-.container{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
     display: flex;
+    flex-direction: column;;
+    margin: 0 auto;
 }
 
-.background{
-    background-color: blue;
-    width: 100%;
-    height: 100vh;
+
+.wave1
+{
+    background-color: #c3e1f1;
+    height: 20vh;
     position: relative;
+    bottom: 0;
+    z-index: 2;
 }
 
-.stars{
-    color: yellow;
+.wave2
+{
+
+    background-color: #25bafc;
+    height: 20vh;
+    position: relative;
+    z-index: 3;
+}
+.wave3
+{
+    background-color: #009afa;
+    height: 20vh;
+    position: relative;
+    z-index: 4;
+}
+.wave4
+{
+   background-color: #006efa;
+    height: 20vh;
+    position: relative;
+    z-index: 5;
+    
 }
 
-.mountains{
-    color: lightblue;
+.svg1 {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+.svg2
+{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+.svg3
+{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
 }
 
-.moon{
-    color: yellow;
-}   
+@media (max-width: 1024px) {
+    .container {
+    max-width: 100vw;
+    position: relative;
+    }   
+    body {
+    background-color: #0000f3
+    };
+    .form * {
+    font-size: large;
+    }   
+}
 
-.bottom {
-    color: darkblue;
+@media (max-width: 768px) {
+    .container {
+    max-width: 100vw;
+    position: relative;
+    }
+    body {
+    background-color: #0000f3
+    };
+    .form * {
+    font-size: x-large;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+    position: relative;
+    max-width: 100vw;
+    flex-shrink: 0;
+    }
+    body {
+        background-color: #0000f3
+    };
+    .form * {
+        font-size: xx-large;
+    }
 }
